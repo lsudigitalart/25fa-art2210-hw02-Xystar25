@@ -5,12 +5,11 @@ function setup() {
   noStroke();
   angleMode(DEGREES);
 
+
 }
 
 function draw() {
   console.log(mouseX, mouseY);
-  //ellipse(mouseX, mouseY, 10);
-
   
 
   push()
@@ -23,27 +22,49 @@ function draw() {
   fill(204,196,186,255);
   rect(0, 0, width, height);
 
-  translate(199,0)
+  push()
+  translate(505, -140)
   fill(255);
-  stroke(0);
+  stroke(255);
   strokeWeight(10);
-  bezier(400, 900, 0, 0, 0, 0, 0, -0);
+  bezier(640, 670, 620, 640, 415, 670, 440, 410);
+  pop()
+
+
   
 
+
+
+
+
+
   push()
-  rotate(-1);
-  translate(0, 330)
-  fill(0, 0 ,65);
-  rect(0, 0, width, -15);
+  translate(160, -90)
+  fill(0, 0, 65);
+  quad(985, 85, 750, 15, 764, 247, 922, 140);
   pop();
 
   push()
-  translate(-845, 120)
+  translate(160, -80)
+  fill(0, 0, 65);
+  quad(985, 105, 750, 115, 764, 247, 922, 140);
+  pop();
+
+  push()
+  translate(160, -80)
+  fill(0, 0, 95);
+  quad(985, 105, 750, 115, 764, 247, 922, 140);
+  pop();
+
+
+  //ugjghgjgjg
+  push()
+  translate(-355, 120)
   fill(0);
   rect(0, 0, width, -18);
   pop();
 
-  //quad(572, 178, 610, 187, 914, 247, 842, 397);
+  
 
   beginShape()
 
